@@ -12,7 +12,7 @@ jobs:
         steps:
             - uses: actions/checkout@v1
             - run: yarn
-            - run: yarn build-storybook
+            #- run: yarn build-storybook
             - uses: chromaui/action@v1
               # options required to the GitHub chromatic action
               with:
@@ -21,4 +21,4 @@ jobs:
                 projectToken: i91z0mpu4gr
                 token: ${{ secrets.GITHUB_TOKEN }}
                 # the name of the folder where Storybook will be exported into.
-                storybookBuildDir: storybook-static
+                #storybookBuildDir: storybook-static
